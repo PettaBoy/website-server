@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "lib": ["ES6", "ESNext.AsyncIterable"],
+        "module": "CommonJS",
+        "strict": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "esModuleInterop": true
+    },
+    "ts-node": {
+        "esm": true
+    }
+}
