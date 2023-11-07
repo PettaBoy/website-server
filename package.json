@@ -6,8 +6,8 @@
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --exec ts-node --respawn src/index.ts",
-    "start": "nodemon --exec ts-node src/index.ts"
+    "dev": "nodemon --exec ts-node --esm --respawn src/index.ts",
+    "start": "nodemon --exec ts-node --esm src/index.ts"
   },
   "keywords": [],
   "author": "",
