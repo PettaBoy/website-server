@@ -13,7 +13,7 @@ import { LyricsResolver } from "./resolvers/lyrics";
 import { Lyrics } from "./entities/lyrics";
 
 dotenv.config();
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 const corsOrigin = "https://pettaboy.github.io"
 async function bootstrap() {
     const schema = await buildSchema({
