@@ -7,11 +7,12 @@ import { ApolloServerPluginDrainHttpServer } from "@apollo/server/plugin/drainHt
 import dotenv from "dotenv";
 import http from "http";
 import express from "express";
-import { json } from "body-parser";
+import pkg from "body-parser";
 import cors from "cors";
-import { LyricsResolver } from "./resolvers/lyrics";
-import { Lyrics } from "./entities/lyrics";
+import { LyricsResolver } from "./resolvers/lyrics.ts";
+import { Lyrics } from "./entities/lyrics.ts";
 
+const { json } = pkg;
 dotenv.config();
 const PORT = process.env.PORT || 8000;
 const corsOrigin = "https://pettaboy.github.io"

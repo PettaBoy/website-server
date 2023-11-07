@@ -1,8 +1,13 @@
 {
     "compilerOptions": {
+        "allowImportingTsExtensions": true,
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "emitDeclarationOnly": true,
         "target": "es6",
         "lib": ["ES6", "ESNext.AsyncIterable"],
-        "module": "CommonJS",
+        "module": "esnext",
+        "moduleResolution": "node",
         "strict": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,

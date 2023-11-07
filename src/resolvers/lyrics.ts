@@ -1,7 +1,7 @@
 import { Resolver, Query, Arg, Mutation } from "type-graphql";
 import { ObjectId } from "mongodb";
-import { Lyrics } from "../entities/lyrics";
-import { addLyricsInput, updateLyricsInput } from "../types/lyrics";
+import { Lyrics } from "../entities/lyrics.ts";
+import { addLyricsInput, updateLyricsInput } from "../types/lyrics.ts";
 
 @Resolver(Lyrics)
 export class LyricsResolver {
